@@ -15,4 +15,4 @@
 
 В файле **Diagram.png** вы увидите блок-схему метода __*ChekSrting*__
 
-Сам алгоритм находится Task/Program.cs
+Сам алгоритм находится Example001/Program.cs
