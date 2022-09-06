@@ -1,7 +1,7 @@
 ﻿//_____________________________________________
 //__________________Блок методов_______________
 //_____________________________________________
-void SecondArrayWithIF(string[] arrayFirst, string[] arraySecond)
+void CheckString(string[] arrayFirst, string[] arraySecond)
 {
     int size = arrayFirst.Length;
     int count = 0;
@@ -33,7 +33,7 @@ void Example001()
 {
     string[] arrayFirst = new string[6] {"546", "pepega", "Kart_racing", "Pit", "99", "Final_Countdown"};
     string[] arraySecond = new string[arrayFirst.Length];
-    SecondArrayWithIF(arrayFirst, arraySecond);
+    CheckString(arrayFirst, arraySecond);
     PrintArray(arraySecond);
 }
 
