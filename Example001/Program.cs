@@ -1,16 +1,43 @@
-﻿string[] arrayFirst = new string[6] {"546", "pepega", "Kart_racing", "Pit", "99", "Final_Countdown"};
-string[] arraySecond = new string[arrayFirst.Length];
-int count = 0;
-for (int i = 0; i < arrayFirst.Length; i++)
+﻿//_____________________________________________
+//__________________Блок методов_______________
+//_____________________________________________
+void SecondArrayWithIF(string[] arrayFirst, string[] arraySecond)
 {
-if(arrayFirst[i].Length <= 3)
+    int size = arrayFirst.Length;
+    int count = 0;
+    for (int i = 0; i < size; i++)
     {
-    arraySecond[count] = arrayFirst[i];
-    count++;
+    if(arrayFirst[i].Length <= 3)
+        {
+        arraySecond[count] = arrayFirst[i];
+        count++;
+        }
     }
 }
-for (int i = 0; i < arraySecond.Length; i++)
+
+void PrintArray(string[] array)
 {
-    Console.Write($"{arraySecond[i]} ");
+    int size = array.Length;
+    for (int i = 0; i < size; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
 }
-Console.WriteLine();
+
+//_____________________________________________
+//__________________Блок кода__________________
+//_____________________________________________
+
+void Example001()
+{
+    string[] arrayFirst = new string[6] {"546", "pepega", "Kart_racing", "Pit", "99", "Final_Countdown"};
+    string[] arraySecond = new string[arrayFirst.Length];
+    SecondArrayWithIF(arrayFirst, arraySecond);
+    PrintArray(arraySecond);
+}
+
+//_____________________________________________
+//__________________Блок вызова________________
+//_____________________________________________
+Example001();
